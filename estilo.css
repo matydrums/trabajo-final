@@ -1,0 +1,160 @@
+
+body{
+    background-image: url(imagenes/textura1.jpg);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.title{
+    font-size: 5rem;
+    color: #dbe;
+    text-shadow: 3px 0 #0ae140;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    color: #858585;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 40px 50 rgba(0, 0, 0, 2);
+    transform: 0.3s ease-out;
+    }
+ul li:first-child{
+    border-radius:  5px 0 0 5px;
+}
+ul li:first-child{
+    border-radius: 0 5px 5px 0;
+}
+ul:hover li:nth-child(odd) {
+    transform: skewY(15deg)
+}
+ul:hover li:nth-child(even) {
+    transform: skewY(15deg);
+}
+
+.drum{
+    outline: none;
+    border: 10px solid #404869;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: #da0463;
+    text-shadow: 3px 0 #dbedf3;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    }
+.s{
+    background-image: url("imagenes/hithat.png");
+}
+.n{
+    background-image: url("imagenes/tacho.png");
+}
+.d{
+    background-image: url("imagenes/plato.png");
+}
+.r{
+    background-image: url("imagenes/tom1.png");
+}
+.u{
+    background-image: url("imagenes/tom2.png");
+}
+.m{
+    background-image: url("imagenes/bombo.png");
+}
+.ss{
+    background-image: url("imagenes/chancha.png");
+}
+.set{
+    margin: 10% auto;
+}
+.pressed{
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.6;
+}
+.red{
+    color: red;
+}
+.navegador{
+    list-style-type: none;
+}
+.nav{
+background-color: #404869;
+display: grid;
+}
+.noti1{
+font-size: 45px;
+color: #0b0b0b;
+text-shadow: 3px 0 #dbedf3;
+}
+.paraf1{
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    
+}
+.eleni{
+    width: 500px;
+    display: flex;
+    float: left;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.noti2{
+    font-size: 45px;
+    color: #0b0b0b;
+    text-shadow: 3px 0 #dbedf3;
+    
+}
+
+.paraf2{
+    font-size: 20px;
+    color: #fff;
+    float: left;
+}
+.ralph{
+    width: 500px;
+    display: flex;
+    float: left;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+.noti3{
+    font-size: 45px;
+    color: #0b0b0b;
+    text-shadow: 3px 0 #dbedf3;
+
+}
+.paraf3{
+    font-size: 20px;
+    color: #fff;
+    float: left;
+}
+.dom{
+    width: 500px;
+    display: flex;
+    float: left;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+.partituras{
+
+}
+.footer{
+    color: #DBEDF3;
+    font-family:sans-serif;
+}
