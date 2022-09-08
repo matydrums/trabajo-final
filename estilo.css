@@ -11,12 +11,12 @@ body{
     color: #dbe;
     text-shadow: 3px 0 #0ae140;
 }
-ul{
+.animacion{
     list-style: none;
     display: flex;
     justify-content: center;
 }
-ul li{
+.animacion li{
     width: 60px;
     height: 60px;
     background-color: #fff;
@@ -25,20 +25,20 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 40px 50 rgba(0, 0, 0, 2);
-    transform: 0.3s ease-out;
+    box-shadow: 0 40px 50 rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
     }
-ul li:first-child{
+.animacion li:first-child{
     border-radius:  5px 0 0 5px;
 }
-ul li:first-child{
+.animacion li:last-child{
     border-radius: 0 5px 5px 0;
 }
-ul:hover li:nth-child(odd) {
+.animacion:hover li:nth-child(odd) {
     transform: skewY(15deg)
 }
-ul:hover li:nth-child(even) {
-    transform: skewY(15deg);
+.animacion:hover li:nth-child(even) {
+    transform: skewY(-15deg);
 }
 
 .drum{
@@ -78,6 +78,88 @@ ul:hover li:nth-child(even) {
 .ss{
     background-image: url("imagenes/chancha.png");
 }
+
+
+.encabezado{ 
+    display: flex;
+    justify-content: center;
+   align-items: stretch;
+    margin: 0;
+    gap:50px;
+
+
+}
+ .navegador li{
+    font-size: 30px;
+    font-style: italic;
+    font: arial;
+}
+.navegador{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+
+}
+.navegador li a{
+    text-decoration: none;
+    color: rgb(30, 26, 26);
+    font-size: 18px;
+    position: relative;
+    transition: 0.8s all linear;
+    padding: 5px 10px;
+
+}
+.navegador li a:hover{
+    color: #292929;
+
+}
+.navegador li a::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #ff0;
+    z-index: 4;
+
+
+}
+.navegador li a:hover::before{
+    animation: ani 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+}
+@keyframes ani {
+    0%{
+        width: 0%;
+        height: 1px;
+        left: 50%;
+    }
+    50%{
+        width: 100%;
+        height: 1px;
+        left: 50%; 
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .set{
     margin: 10% auto;
 }
@@ -88,13 +170,20 @@ ul:hover li:nth-child(even) {
 .red{
     color: red;
 }
-.navegador{
-    list-style-type: none;
+
+
+
+
+.palosvic{
+    width: 98%;
+   
 }
-.nav{
-background-color: #404869;
-display: grid;
+.encabezado{
+    background-color: white;
+    clear: both;
+    
 }
+
 .noti1{
 font-size: 45px;
 color: #0b0b0b;
