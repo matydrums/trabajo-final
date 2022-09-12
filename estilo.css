@@ -11,6 +11,9 @@ body{
     color: #dbe;
     text-shadow: 3px 0 #0ae140;
 }
+.title-part{
+    text-shadow: 3px 0 #daf831;
+}
 .animacion{
     list-style: none;
     display: flex;
@@ -145,20 +148,50 @@ body{
         left: 0;
     }
 }    
+.partituras{
+    list-style: none;
+    font-size: 30px;
 
+}
+.The-Scientist-1{
+    width: 700px;
+}
+.the-pretender-1{
+    width: 700px;
+}
+.the-pretender-2{
+    width: 700px;
+}
+.the-pretender-3{
+    width: 700px;
+}
+.basket-case-1{
+   width: 700px;
+}
+.basket-case-2{
+    width: 700px;
+}
+.i-still-love-you-1{
+    width: 700px;
+}
+.i-still-love-you-2{
+    width: 700px;
+}
+.h2-audio{
+    font-size: 3rem;
+    color: rgba(239, 142, 217, 0.766);
+    text-shadow: 3px 0 #f8e0bfc7;
+    font: sans-serif;
 
+}
+.orden-list{
+    list-style: none;
+    color: #404869;
+}
+.palos{
+    width: 100%;
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 .set{
     margin: 10% auto;
@@ -178,7 +211,7 @@ body{
     width: 98%;
    
 }
-.encabezado{
+header{
     background-color: white;
     clear: both;
     
@@ -240,10 +273,7 @@ text-shadow: 3px 0 #dbedf3;
     margin-right: 15px;
     border-radius: 3px;
 }
-.partituras{
-
-}
-.footer{
+footer{
     color: #DBEDF3;
     font-family:sans-serif;
 }
