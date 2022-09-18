@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Nicolas Drums</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="iconos.css">
     <link rel="icon" href="log.ico">
     <script src="index.js" lenguage="javascript" type="text/javascript"></script>
 </head>
@@ -33,24 +34,24 @@
     </ul>
 </div>
     <div class="set">
-        <button class="s drum">S</button>
-        <button class="n drum">N</button>
-        <button class="d drum">d</button>
-        <button class="r drum">r</button>
-        <button class="u drum">u</button>
-        <button class="m drum">m</button>
-        <button class="ss drum">s</button>
+        <button src="sound/hithat.mp3" onclick="sound1()" id="hithat" class ="s drum">S</button>
+        <button src="sound/tacho.mp3"  onclick="sound2()" id="tacho" class="n drum">N</button>
+        <button src="sound/plato.mp3" onclick="sound3()" id="plato" class="d drum">d</button>
+        <button src="sound/tom2.mp3" onclick="sound4()" id="tom2" class="r drum">r</button>
+        <button src="sound/tom1.mp3" onclick="sound5()" id="tom1" class="u drum">u</button>
+        <button src="sound/bombo.mp3"  onclick="sound6()" id="bombo" class="m drum">m</button>
+        <button src="sound/chancha.mp3" onclick="sound7()" id="chancha" class="ss drum">s</button>
     </div>
             <header class="encabezado">
                 <div class="conteiner-menu">
                     <nav class="nave">
                         <ul class="navegador">
-                            <li class="nav-home"><a href="index.html">Home</li>
-                            <li class="nav-artistas"><a href="artistas.html">Artistas</li>
-                            <li class="nav-blog"><a href="acceso.html">Subcripciones</li>
-                            <li class="nav-partituras"><a href="partituras.html">Partituras</li>
-                            <li class="nav-noticias"><a href="estadistica.html">Estadisticas</li>
-                            <li class="nav-ritmos"><a href="ritmos.html">Ritmos</a></li>
+                            <li class="nav-home"><span class="icon-home"></span><a href="index.html">Home</li>
+                            <li class="nav-artistas"><span class="icon-users"></span><a href="artistas.html">Artistas</li>
+                            <li class="nav-acceso"><span class="icon-key2"></span><a href="acceso.html">Suscripciones</li>
+                            <li class="nav-partituras"><span class="icon-music"></span><a href="partituras.html">Partituras</li>
+                            <li class="nav-contacto"><span class="icon-bubbles2"></span><a href="contacto.html">Contacto</li>
+                            <li class="nav-ritmos"><span class="icon-headphones"></span><a href="ritmos.html">Ritmos</a></li>
                         </ul>
                     </nav>
     </div>
@@ -137,7 +138,7 @@ Se vienen grandes cosas, ¡estén atentos!
                digo que los pongan en la batería a tocar junto con canciones y que se les 
                enseñe ritmos y rulos básicos con los que se puedan divertir. Si se divierten
                 al tocar, después podemos transmitirles las técnicas. Lo primero es capturar 
-                en el alumno y la alumna, la diversion de tocar la batería».
+                en el alumno y la alumna, la diversion de tocar la batería.
         </p>
             
 

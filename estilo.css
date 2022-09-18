@@ -1,11 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sacramento&display=swap');
 body{
     background-image: url(imagenes/textura1.jpg);
     width: 100vw;
     height: 100vh;
     text-align: center;
 }
-
 .title{
     font-size: 5rem;
     color: #dbe;
@@ -14,6 +13,54 @@ body{
 .title-part{
     text-shadow: 3px 0 #daf831;
 }
+.h1-ritmos{
+font-size: 5rem;
+font-family: 'Sacramento', Helvetica, sans-serif;
+color: #ffffff;
+text-shadow: 2px 2px #a2ae00;
+text-decoration: overline underline double rgb(9, 127, 48);
+}
+.contenedor-ritmos{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #def6e9;
+}
+.h2-form{
+    color: rgb(252, 251, 249);
+    font-size: 2rem;
+}
+.paraf-contacto{
+    font-size: 2rem;
+    color: #fcfcfc;
+    margin: 6px;
+}
+.negra-contacto{
+    font-size: 3rem;
+    color: #edf11d;
+}
+.negra-critica{
+    font-size: 3rem;
+    color: #ff0c0c;
+}
+.img-contacto{
+    display: flexbox;
+}
+.conteiner-contacto{
+   background-color: #293b2dd3;
+   width: 50%;
+   height: auto;
+   margin: auto;
+   border-radius: 21px 60px 100px 11px;
+}
+.conteiner-contacto2{
+    background-color: #293b2dd3;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border-radius: 21px 60px 100px 11px;
+
+}
+
 .animacion{
     list-style: none;
     display: flex;
@@ -43,7 +90,6 @@ body{
 .animacion:hover li:nth-child(even) {
     transform: skewY(-15deg);
 }
-
 .drum{
     outline: none;
     border: 10px solid #404869;
@@ -81,8 +127,6 @@ body{
 .ss{
     background-image: url("imagenes/chancha.png");
 }
-
-
 .encabezado{ 
     display: flex;
     justify-content: center;
@@ -125,8 +169,6 @@ body{
     height: 0;
     background-color: #ff0;
     z-index: 4;
-
-
 }
 .navegador li a:hover::before{
     animation: ani 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
@@ -147,11 +189,165 @@ body{
         height: 100%;
         left: 0;
     }
-}    
-.partituras{
-    list-style: none;
-    font-size: 30px;
+}
+.title-subctitos{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px #daf83162;
+}
+.formulario-subcritos{ 
+    position: relative;
+    width  : 80%;
+    height : 50%;
+    margin : 0 auto;
+    padding: 2em;
+    box-sizing: border-box;
+    background : rgba(77, 44, 44, 0.529);
+    border-radius: 50px 10px 50px 80px;
+}
+.box-listado{
+    width: 90%;
+    height: 70%;
+    margin: 40px;
+}
+.box-listado h2{
+    color: #fff;
+    background: #03a9fa;
+    padding: 10px 20px;
+    font-size: 70px;
+    font-weight: 700;
+  border-radius: 20px 10px 60px 11px;
+    font-family: 'Sacramento', 'Arial Narrow', Arial, sans-serif;
+}
+.box-listado ul{
+    position: relative;
+    background-color: rgba(44, 72, 127, 0.559);
+    border-radius: 20px;
+}
 
+.box-listado ul li{
+    list-style: none;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 5px rgba(0,0,0.1);
+    transition: 0.5s;
+}
+.box-listado ul li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    background: #79ff25;
+    box-shadow: 0 5px rgba(0,0,0.2);
+    color: rgb(16, 14, 14);
+}
+.box-listado ul li span{
+    text-align: center;
+    line-height: 20px;
+    background: #d7a9ff;
+    color: rgb(237, 5, 5);
+    display:  inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: rotateY(-2px);
+}
+.box-listado ul li:hover span{
+    background: rgb(255, 255, 255);
+    color: #f47311;
+}
+.datos-personales{
+    background-color: #2de85267; 
+    color: #c0f405;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+.datodeform1{
+font-size: 3rem;
+color: #0b0b0b;
+}
+.datos-cuenta{
+    background-color: #478da76c; 
+    color: #c0f405;
+    font-size: 2rem;
+    border-radius: 20px;
+} 
+.datodeform2{
+    font-size: 3rem;
+    color: #0b0b0b;
+}
+.datos-comentarios{
+    background-color: #65105575; 
+    color: #c0f405;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+.datosdeform3{
+    font-size: 3rem;
+    color: #0b0b0b;
+}
+.datos-adiccionales{
+    background-color: #8db19c6e; 
+    color: #c0f405;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+.datosdeform4{
+    font-size: 3rem;
+    color: #0b0b0b; 
+}
+input{
+    background-color: #cfd6ffce;
+    padding: 3px;
+    border-radius: 3px;
+    color: #150c93;
+    width: 400px;
+    height: 20px;
+}
+select{
+    background-color: #cfd6ffce;
+    padding: 3px;
+    border-radius: 3px;
+    color: #fa0101;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+}
+.form-coda{
+    font-size: 2rem;
+    color: #eee2e2;
+    font-style: italic;
+    }
+.btn-s{
+    background-color: #478da700; 
+    color: #c0f405;
+    font-size: 22px;
+    border-radius: 20px;
+    height: 300px
+}
+.btn-ok{
+    width: 200px;
+    height: 100px;
+    border: 0;
+    border-radius: 29px;
+    font-size: 2rem;
+    background: red;
+    color: white;
+}
+.btn-cancel{
+    width: 200px;
+    height: 100px;
+    border: 0;
+    border-radius: 29px;
+    font-size: 2rem;
+    background: rgb(71, 230, 22);
+    color: white;
+}
+.btn-ritmos{
+    padding: 16px;
+    border: 0;
+    border-radius: 26px;
+    background: #0ae140;
+    color: #150c93;
 }
 .The-Scientist-1{
     width: 700px;
@@ -176,6 +372,9 @@ body{
 }
 .i-still-love-you-2{
     width: 700px;
+}
+.contenedor-ritmos img{
+width: 700px;
 }
 .h2-audio{
     font-size: 3rem;
@@ -203,10 +402,6 @@ body{
 .red{
     color: red;
 }
-
-
-
-
 .palosvic{
     width: 98%;
    
@@ -277,3 +472,19 @@ footer{
     color: #DBEDF3;
     font-family:sans-serif;
 }
+
+
+/*.contenedor-ritmos{
+    left: 5%;
+    width: 400px;
+    height: 200px;
+    background: -o-linear-gradient(to right
+                                   #40e0d0
+                                   #ff8c00  
+                                   #ff0080);
+ 
+ position: absolute;  
+ border-radius: 10px;      
+
+}/*
+

@@ -6,7 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Nicolas Drums</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="iconos.css">
     <link rel="icon" href="log.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <script>
+        function sound1(){
+            var snd = new
+            Audio('sound/hithat.mp3')
+            snd.play()
+            }
+            function sound2(){
+                var snd = new
+            Audio('sound/tacho.mp3')
+            snd.play()
+            }
+            function sound3(){
+                var snd = new
+            Audio('sound/plato.mp3')
+            snd.play()
+            }
+            function sound4(){
+                var snd = new
+            Audio('sound/tom2.mp3')
+            snd.play()
+            }
+            function sound5(){
+                var snd = new
+            Audio('sound/tom1.mp3')
+            snd.play()
+            }
+            function sound6(){
+                var snd = new
+            Audio('sound/bombo.mp3')
+            snd.play()
+            }
+            function sound7(){
+                var snd = new
+            Audio('sound/chancha.mp3')
+            snd.play()
+            }
+    </script>
 </head>
 <body>
 <div>
@@ -32,24 +71,24 @@
     </ul>
 </div>
     <div class="set">
-        <button class="s drum">S</button>
-        <button class="n drum">N</button>
-        <button class="d drum">d</button>
-        <button class="r drum">r</button>
-        <button class="u drum">u</button>
-        <button class="m drum">m</button>
-        <button class="ss drum">s</button>
+        <button src="sound/hithat.mp3" onclick="sound1()" id="hithat" class ="s drum">S</button>
+        <button src="sound/tacho.mp3"  onclick="sound2()" id="tacho" class="n drum">N</button>
+        <button src="sound/plato.mp3" onclick="sound3()" id="plato" class="d drum">d</button>
+        <button src="sound/tom2.mp3" onclick="sound4()" id="tom2" class="r drum">r</button>
+        <button src="sound/tom1.mp3" onclick="sound5()" id="tom1" class="u drum">u</button>
+        <button src="sound/bombo.mp3"  onclick="sound6()" id="bombo" class="m drum">m</button>
+        <button src="sound/chancha.mp3" onclick="sound7()" id="chancha" class="ss drum">s</button>
     </div>
     <header class="encabezado">
         <div class="conteiner-menu">
             <nav class="nave">
                 <ul class="navegador">
-                    <li class=nav-home><a class="orden-list" href="index.html">Home</li>
-                    <li class=nav-artistas><a class="orden-list" href="artistas.html">Artistas</li>
-                    <li class=nav-blog><a class="orden-list" href="acceso.html">Subcripciones</li>
-                    <li class="nav-partituras"><a class="orden-list" href="partituras.html">Partituras</li>
-                    <li class="nav-noticias"><a class="orden-list" href="estadisticas.html">Estadisticas</li>
-                    <li class="nav-ritmos"><a class="orden-list" href="ritmos.html">Ritmos</a></li>
+                    <li class="nav-home"><span class="icon-home"></span><a href="index.html">Home</li>
+                        <li class="nav-artistas"><span class="icon-users"></span><a href="artistas.html">Artistas</li>
+                        <li class="nav-acceso"><span class="icon-key2"></span><a href="acceso.html">Suscripciones</li>
+                        <li class="nav-partituras"><span class="icon-music"></span><a href="partituras.html">Partituras</li>
+                        <li class="nav-contacto"><span class="icon-bubbles2"></span><a href="contacto.html">Contacto</li>
+                        <li class="nav-ritmos"><span class="icon-headphones"></span><a href="ritmos.html">Ritmos</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,24 +98,54 @@
                 <img  class="palos" src="imagenes/menu-palo.png" alt="palillos">
                 <br>
                     <br>
-                <p class="p-subcrtitos">Subcribiste a nuesta pagina y recibiras noticas y novedades sobre este maravillos mundo de los parches</p>  
-
-
-                            
-                    <br>
-                        <br>
-                    <section class="formulario-subcrtios">
-                <form action="">
-                <div class="form-grupo">
-                            Nombre:<br><input type="text" name="nombre" minlength="3" maxlength="18" placeholder="Ingrese su Nombre" required><br>
-                            Apellido:<br><input type="text" name="apellido" minlength="3" maxlength="18" placeholder="Ingrese su Apellido" required><br>
+                <h1 class="title-subctitos">Subcribiste a nuestra pagina y recibiras noticas y novedades sobre este maravillos mundo de los parches</h1>  
+            <br>                   
+            <br>
+            <h2 class="h2-form">* Indica campo requerido</h2>
+    <section class="formulario-subcritos">
+        <form class="" action="">
+            <div class="form-grupo">
+                <div>
+                    <fieldset class="datos-personales">
+                        <legend class="datodeform1">Mis datos Personales</legend>
+                        *Nombre Completo:<br><input type="text" name="nombre" minlength="3" maxlength="18" placeholder="Ingrese su Nombre" required><br>
+                        *Apellido:<br><input type="text" name="apellido" minlength="3" maxlength="18" placeholder="Ingrese su Apellido" required><br>
                             Edad:<br><input type="number" name="edad" placeholder="Ingrese su Edad"><br>
-                            Correo Electronico:<br><input type="email" name="email" minlength="3" maxlength="30" placeholder="Ingrese su Correo" required><br>
-                            Contraseña:<br><input type="password" name="nueva-contraseña" minlength="6" maxlength="23" placeholder="Crea una Contraseña" required><br>
-                            Repita Contraseña:<br><input type="password" name="repita-contraseña" minlength="6" maxlength="23" placeholder="Repita Contraseña" required><br>
-                            <div>       
-                                Bateria Favorita<br>
-                                <select name="bate" id="Bateria"><br>
+                            Pais:<br><input type="text" name="Pais" minlength="3" maxlength="30" placeholder="Pais"><br>
+                            Cuidad:<br><input type="text" name="ciudad" minlength="4" maxlength="19" placeholder="Localidad"><br>
+                        *Codigo Postal:<br><input type="number" placeholder="Ingrese Codigo Postal"required><br>
+                        *Telefono:<br><input type="tel" name="telefono" minlength="7" maxlength="20" placeholder="Ingrese telefono o celular" required><br>
+                            Fecha de Nacimiento:<br><input type="date" name="nacimiento"><br>
+                            Direccion:<br><input type="text" name="direccion" minlength="3" maxlength="30" placeholder="Ingrese direccion"><br>
+                            Oficio:<br><input type="text" name="oficio" minlength="3" maxlength="30" placeholder="Ocupacion (Opcional)"><br>
+                            Estado Civil:<br><input type="text" name="estadocivil" minlength="3" maxlength="30" placeholder="Estado Civil (Opcional)"><br>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset class="datos-cuenta">
+                        <legend class="datodeform2">Datos de la cuenta</legend>                    
+                        *Correo Electronico:<br><input type="email" name="email" minlength="3" maxlength="30" placeholder="Ingrese su Correo" required><br>
+                        *Contraseña:<br><input type="password" name="nueva-contraseña" minlength="6" maxlength="23" placeholder="Crea una Contraseña" required><br>
+                        *Repita Contraseña:<br><input type="password" name="repita-contraseña" minlength="6" maxlength="23" placeholder="Repita Contraseña" required><br>
+                            Año y hora:<br><input type="datetime-local"><br>
+                            Desea recibir Correo de noticias:<br>No<input type="radio" name="opcion"><br>
+                                                             <br>Si<input type="radio" name="opcion"><br>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset class="datos-comentarios">
+                        <legend class="datosdeform3">Deje su comentario</legend>
+                            Califica nuestra pagina:<br>1<input type="range" min="1" max="11">10<br>
+                            Deje la url de su pagina preferida de contenido:<br><input type="url" placeholder="Opcional"><br>
+                            (si posee partituras) dejela Aqui:<br><input type="file" placeholder="solo archivos PDF"><br>
+                            Comentario:<br><textarea minlength="9" maxlength="55" placeholder="Escriba nota" rows="8"></textarea><br>
+                    </fieldset>
+                </div>
+                <div>   
+                    <fieldset class="datos-adiccionales">
+                        <legend class="datosdeform4">Infomacion adiccional</legend>
+                                            Bateria Favorita:<br>
+                            <select name="bate" id="Bateria"><br>
                                 <option selected hidden>Bateria</option><br>
                                 <option value="Solidrums-Nautilus">Solidrums Nautilus</option><br>
                                 <option value="Roland Vad506 E-drum Set">Roland Vad506 E-drum Set</option>
@@ -98,50 +167,76 @@
                                 <option value="DW-Collector-Series-Custom">DW Collector Series Custom</option>
                                 <option value="DW-Design-Series-Acrylic">DW Design Series Acrylic</option>
                                 <option value="DWPerformanceFinishPly22">DW Performance Finish Ply 22" Chrome Shadow</option>
-                                <option value="Pdp-New-Yorker">Pdp New Yorker</option>
-                                
-                                
-                                <br>
+                                <option value="Pdp-New-Yorker">Pdp New Yorker</option><br><br><br> 
+                            </select><br>
+                                                         Platillos Favoritos:<br>
+                            <select name="pla" id="Platillos"><br>
+                                <option selected hidden>Platillos</option><br>
+                                <option value="Zil-k">Zildjian K</option>
+                                <option value="Zil-custom">Zildjian Custom</option>
+                                <option value="Zil-zbts">Zildjian Zbts</option>
+                                <option value="Zil-planet-z">Zildjian Planet Z</option>
+                                <option value="Zil-sc">zildjian Scimitar</option>
+                                <option value="Zil-av">zildjian Avedis</option>
+                                <option value="sab-aax">Sabian Aax</option>
+                                <option value="sab-hhx">Sabian Hhx</option>
+                                <option value="sab-xsr">Sabian Xsr</option>
+                                <option value="sab-sbr">Sabian Sbr</option>
+                                <option value="sab-b8-pro">Sabian b8 pro</option>
+                                <option value="pais-pst7">Paiste Pst7</option>
+                                <option value="pais-pst5">Paiste Pst5</option>
+                                <option value="pais-rud">Paiste Rude</option>
+                                <option value="pais-alph">Paiste Alpha</option>
+                                <option value="pais-alph-bla-lin">Paiste Alpha Black Line</option>
+                                <option value="mein-cla-cus-dar">Meinl Classics Custom Dark</option>
+                                <option value="pais-rud">Meinl Hcs</option>
+                                <option value="tur-seh">Turkish Sehzades</option>
+                                <option value="ist-tra">Istanbul Traditional</option>
+                                <option value="ist-ago-sig">Istanbul Agop Signature</option>
+                                <option value="ist-meh-blac-bel">Istanbul Mehmet Black Bell</option><br><br>
+                            </select><br>
+                                    Marca de Palillos o Baquetas Preferida:<br>
+                            <select name="baquetas" id="palillos"><br>
+                                <option selected hidden>Platillos o Baquetas</option><br>
+                                <option value="goo">Goodwood</option>
+                                <option value="vic">Vic Firth</option>
+                                <option value="Pro">Promark</option>
+                                <option value="vat">Vater</option>
+                                <option value="stag">Stagg</option>
+                                <option value="ahead">Palillos Ahead</option>
+                                <option value="oniix">Palillo Zildjian Oniix</option><br>
+                            </section>
+                            <br>
 
-                            </div>
-                            Cuidad:<br><input type="text" name="ciudad" minlength="4" maxlength="19" placeholder="Localidad"><br>
-                            Codigo Postal:<br><input type="number" placeholder="Ingrese Codigo Postal"><br>
                 </div>
-                <div>
-                    Platillos Favoritos<br>
-                    <select name="pla" id="Platillos"><br>
-                    <option selected hidden>Platillos</option><br>
-                    <option value="Zil-k">Zildjian K</option>
-                    <option value="Zil-custom">Zildjian Custom</option>
-                    <option value="Zil-zbts">Zildjian Zbts</option>
-                    <option value="Zil-planet-z">Zildjian Planet Z</option>
-                    <option value="Zil-sc">zildjian Scimitar</option>
-                    <option value="Zil-av">zildjian Avedis</option>
-                    <option value="sab-aax">Sabian Aax</option>
-                    <option value="sab-hhx">Sabian Hhx</option>
-                    <option value="sab-xsr">Sabian Xsr</option>
-                    <option value="sab-sbr">Sabian Sbr</option>
-                    <option value="sab-b8-pro">Sabian b8 pro</option>
-                    <option value="pais-pst7">Paiste Pst7</option>
-                    <option value="pais-pst5">Paiste Pst5</option>
-                    <option value="pais-rud">Paiste Rude</option>
-                    <option value="pais-alph">Paiste Alpha</option>
-                    <option value="pais-alph-bla-lin">Paiste Alpha Black Line</option>
-                    <option value="mein-cla-cus-dar">Meinl Classics Custom Dark</option>
-                    <option value="pais-rud">Meinl Hcs</option>
-                    <option value="tur-seh">Turkish Sehzades</option>
-                    <option value="ist-tra">Istanbul Traditional</option>
-                    <option value="ist-ago-sig">Istanbul Agop Signature</option>
-                    <option value="ist-meh-blac-bel">Istanbul Mehmet Black Bell</option><br>
+                <div class="contenedorextra"><br>
+
+            Elija tamaño de palillos:
+           
+                                        <br>2B<input type="radio" name="tamaño"><br>
+                                        <br>5B<input type="radio" name="tamaño"><br>
+                                        <br>5A<input type="radio" name="tamaño"><br>
+                                        <br>7A<input type="radio" name="tamaño"><br>
+                                        <br>2B<input type="radio" name="tamaño"><br>
+                                        
+                </form>                            
                 </div>
-                <br>
-                           
-                                <input type="submit" value="Subcribiste">
-                                <input type="reset" value="CANCELAR"><br>
-                                Comentario:<br><textarea minlength="9" maxlength="55" placeholder="Escriba nota"></textarea><br>
-                        
-                </form>
-                    </section>
+
+                    </fieldset>
+
+                </form>   
+                    <fieldset class="btn-s">
+                <legend class="form-coda">Te agradecemos por esta Suscripcion, seras miembro de esta hermosa comunidad bateristica</legend>
+                    <input onclick='variante1("ok")' class="btn-ok" type="submit" value="Suscribirme">
+                    <input class="btn-cancel" id="btnreset" type="reset" value="CANCELAR"><br>
+                 </fieldset> 
+                
+
+
+
+
+
+    </section>
                 </main>
     <footer>
         Todos los derechos Reservados

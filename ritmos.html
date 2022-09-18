@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Nicolas Drums</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="iconos.css">
+    <link rel="icon" href="log.ico">
+    <script>
+        function sound1(){
+        var snd = new
+        Audio('sound/hithat.mp3')
+        snd.play()
+        }
+        function sound2(){
+            var snd = new
+        Audio('sound/tacho.mp3')
+        snd.play()
+        }
+        function sound3(){
+            var snd = new
+        Audio('sound/plato.mp3')
+        snd.play()
+        }
+        function sound4(){
+            var snd = new
+        Audio('sound/tom2.mp3')
+        snd.play()
+        }
+        function sound5(){
+            var snd = new
+        Audio('sound/tom1.mp3')
+        snd.play()
+        }
+        function sound6(){
+            var snd = new
+        Audio('sound/bombo.mp3')
+        snd.play()
+        }
+        function sound7(){
+            var snd = new
+        Audio('sound/chancha.mp3')
+        snd.play()
+        }
+    </script>
+</head>
+<body>
+<div>
+    <h1 class="title">Bienvenidos</h1>
+    <ul class="animacion">
+        <li>B</li>
+        <li>A</li>
+        <li>T</li>
+        <li>E</li>
+        <li>R</li>
+        <li>O</li>
+        <li>S</li>
+        <li></li>
+        <li>N</li>
+        <li>I</li>
+        <li>C</li>
+        <li>O</li>
+        <li>L</li>
+        <li>E</li>
+        <li>Ñ</li>
+        <li>O</li>
+        <li>S</li>
+    </ul>
+</div>
+    <div class="set">
+        <button src="sound/hithat.mp3" onclick="sound1()" id="hithat" class ="s drum">S</button>
+        <button src="sound/tacho.mp3"  onclick="sound2()" id="tacho" class="n drum">N</button>
+        <button src="sound/plato.mp3" onclick="sound3()" id="plato" class="d drum">d</button>
+        <button src="sound/tom2.mp3" onclick="sound4()" id="tom2" class="r drum">r</button>
+        <button src="sound/tom1.mp3" onclick="sound5()" id="tom1" class="u drum">u</button>
+        <button src="sound/bombo.mp3"  onclick="sound6()" id="bombo" class="m drum">m</button>
+        <button src="sound/chancha.mp3" onclick="sound7()" id="chancha" class="ss drum">s</button>
+    </div>
+            <header class="encabezado">
+                <div class="conteiner-menu">
+                    <nav class="nave">
+                        <ul class="navegador">
+                                <li class="nav-home"><span class="icon-home"></span><a href="index.html">Home</li>
+                                <li class="nav-artistas"><span class="icon-users"></span><a href="artistas.html">Artistas</li>
+                                <li class="nav-acceso"><span class="icon-key2"></span><a href="acceso.html">Suscripciones</li>
+                                <li class="nav-partituras"><span class="icon-music"></span><a href="partituras.html">Partituras</li>
+                                <li class="nav-contacto"><span class="icon-bubbles2"></span><a href="contacto.html">Contacto</li>
+                                <li class="nav-ritmos"><span class="icon-headphones"></span><a href="ritmos.html">Ritmos</a></li>
+                        </ul>
+                    </nav>
+    </div>
+            </header>
+<main class="main-ritmos">
+
+    <div class="contenedor-ritmos">
+
+    <h1 class="h1-ritmos"><i>Listado de Ritmos</i></h1>
+ 
+    <h2>Afro-Reggae</h2>
+    <img class="ritmo-afro-regge" src="partituras/ritmos/Ritmo Afro Reggae.jpg" alt="partitura reggae"><br><br><br><br>
+
+    <h2>Blues N°1</h2>
+    <img class="blues1" src="partituras/ritmos/Ritmo Blues 1.jpg" alt="partitura blues1"><br>
+    <h2>Blues N°2</h2>
+    <img class="blues2" src="partituras/ritmos/Ritmo Blues 2.jpg" alt="partitura blues2"><br><br><br><br>
+
+    <h2>Funk</h2>
+    <img class="funk" src="partituras/ritmos/Ritmo Funk.jpg" alt="partitura funk"><br><br><br><br>
+
+    <h2>Jazz</h2>
+    <img class="jazz" src="partituras/ritmos/Ritmo Jazz .jpg" alt="partitura jazz"><br><br><br><br>
+
+    <h2>Pop</h2>
+    <img class="pop" src="partituras/ritmos/Ritmo Pop Rock 1.jpg" alt="partitura pop"><br><br><br><br>
+
+    <h2>Rock N°1</h2>
+    <img class="rock-1" src="partituras/ritmos/Rock1.jpg" alt="rock 1"><br>
+
+    <h2>Rock N°2</h2>
+    <img class="rock-2" src="partituras/ritmos/Ritmo Rock 2.jpg" alt="partitura rock 2"><br>
+
+    <h2>Rock N°3</h2>
+    <img class="rock-3" src="partituras/ritmos/Ritmo Rock 3.jpg" alt="partitura rock 3"><br><br><br><br>
+
+    <h2>Dance</h2>
+    <img class="dance" src="partituras/ritmos/Rtimo Dance.jpg" alt="partitura dance"><br><br><br><br>
+
+    <h2>Shuffle</h2>
+    <img class="shuffle" src="partituras/ritmos/Shuffle.jpg" alt="partitura shuffle"><br><br><br><br>
+
+    Compartinos tu partitura:<br><input type="file" placeholder="solo archivos de Imagen"><button class="btn-ritmos" type="submit" value="Enviar">Enviar</button>
+
+</div>
+
+
+
+
+</main>
+
+    <footer>
+        Todos los derechos Reservados
+        
+    </footer>
+</body>
+</html>

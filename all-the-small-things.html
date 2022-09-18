@@ -6,7 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Nicolas Drums</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="iconos.css">
     <link rel="icon" href="log.ico">
+    <script>
+        function sound1(){
+        var snd = new
+        Audio('sound/hithat.mp3')
+        snd.play()
+        }
+        function sound2(){
+            var snd = new
+        Audio('sound/tacho.mp3')
+        snd.play()
+        }
+        function sound3(){
+            var snd = new
+        Audio('sound/plato.mp3')
+        snd.play()
+        }
+        function sound4(){
+            var snd = new
+        Audio('sound/tom2.mp3')
+        snd.play()
+        }
+        function sound5(){
+            var snd = new
+        Audio('sound/tom1.mp3')
+        snd.play()
+        }
+        function sound6(){
+            var snd = new
+        Audio('sound/bombo.mp3')
+        snd.play()
+        }
+        function sound7(){
+            var snd = new
+        Audio('sound/chancha.mp3')
+        snd.play()
+        }
+    </script>
 </head>
 <body>
     <h1 class="title">Bienvenidos</h1>
@@ -31,25 +69,25 @@
     </ul>
 
     <div class="set">
-        <button class="s drum">S</button>
-        <button class="n drum">N</button>
-        <button class="d drum">d</button>
-        <button class="r drum">r</button>
-        <button class="u drum">u</button>
-        <button class="m drum">m</button>
-        <button class="ss drum">s</button>
+        <button src="sound/hithat.mp3" onclick="sound1()" id="hithat" class ="s drum">S</button>
+        <button src="sound/tacho.mp3"  onclick="sound2()" id="tacho" class="n drum">N</button>
+        <button src="sound/plato.mp3" onclick="sound3()" id="plato" class="d drum">d</button>
+        <button src="sound/tom2.mp3" onclick="sound4()" id="tom2" class="r drum">r</button>
+        <button src="sound/tom1.mp3" onclick="sound5()" id="tom1" class="u drum">u</button>
+        <button src="sound/bombo.mp3"  onclick="sound6()" id="bombo" class="m drum">m</button>
+        <button src="sound/chancha.mp3" onclick="sound7()" id="chancha" class="ss drum">s</button>
     </div>
         
     <header class="encabezado">
         <div class="conteiner-menu">
             <nav class="nave">
                 <ul class="navegador">
-                    <li class=nav-home><a href="index.html">Home</li>
-                    <li class=nav-artistas><a href="artistas.html">Artistas</li>
-                    <li class=nav-blog><a href="acceso.html">Subcripciones</li>
-                    <li class="nav-partituras"><a href="partituras.html">Partituras</li>
-                    <li class="nav-noticias"><a href="estadisticas.html">Estadisticas</li>
-                    <li class="nav-ritmos"><a href="ritmos.html">Ritmos</li>
+                        <li class="nav-home"><span class="icon-home"></span><a href="index.html">Home</li>
+                        <li class="nav-artistas"><span class="icon-users"></span><a href="artistas.html">Artistas</li>
+                        <li class="nav-acceso"><span class="icon-key2"></span><a href="acceso.html">Suscripciones</li>
+                        <li class="nav-partituras"><span class="icon-music"></span><a href="partituras.html">Partituras</li>
+                        <li class="nav-contacto"><span class="icon-bubbles2"></span><a href="contacto.html">Contacto</li>
+                        <li class="nav-ritmos"><span class="icon-headphones"></span><a href="ritmos.html">Ritmos</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,16 +95,18 @@
     <br>
     <br>
             <main>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YX6M6ZPvDQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h1 class="title-part">Blink 182 - All The Small Things</h1>
-                <br>
-                <br>
+                    <br>
+                        <br>
+                            
                
                     <img class="All-The-Small-Things-1" src="partituras/Blink 182 - All The Small Things1.jpg" alt="partitura">
                 <br>
                 <br>
                     <img class="All-The-Small-Things-2" src="partituras/Blink182 - All The Small Things 2.jpg" alt="partitura"> 
-                <br>
-                <br>
+                    <br>
+                        <br>
             </main>
      <footer>
         Todos los derechos Reservados

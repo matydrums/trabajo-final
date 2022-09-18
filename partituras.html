@@ -6,7 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Nicolas Drums</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="iconos.css">
     <link rel="icon" href="log.ico">
+    <script>
+        function sound1(){
+        var snd = new
+        Audio('sound/hithat.mp3')
+        snd.play()
+        }
+        function sound2(){
+            var snd = new
+        Audio('sound/tacho.mp3')
+        snd.play()
+        }
+        function sound3(){
+            var snd = new
+        Audio('sound/plato.mp3')
+        snd.play()
+        }
+        function sound4(){
+            var snd = new
+        Audio('sound/tom2.mp3')
+        snd.play()
+        }
+        function sound5(){
+            var snd = new
+        Audio('sound/tom1.mp3')
+        snd.play()
+        }
+        function sound6(){
+            var snd = new
+        Audio('sound/bombo.mp3')
+        snd.play()
+        }
+        function sound7(){
+            var snd = new
+        Audio('sound/chancha.mp3')
+        snd.play()
+        }
+    </script>
     </head>
 <body>
     <h1 class="title">Bienvenidos</h1>
@@ -30,42 +68,42 @@
         <li>S</li>
     </ul>
 <div class="set">
-        <button class="s drum">S</button>
-        <button class="n drum">N</button>
-        <button class="d drum">d</button>
-        <button class="r drum">r</button>
-        <button class="u drum">u</button>
-        <button class="m drum">m</button>
-        <button class="ss drum">s</button>
+    <button src="sound/hithat.mp3" onclick="sound1()" id="hithat" class ="s drum">S</button>
+    <button src="sound/tacho.mp3"  onclick="sound2()" id="tacho" class="n drum">N</button>
+    <button src="sound/plato.mp3" onclick="sound3()" id="plato" class="d drum">d</button>
+    <button src="sound/tom2.mp3" onclick="sound4()" id="tom2" class="r drum">r</button>
+    <button src="sound/tom1.mp3" onclick="sound5()" id="tom1" class="u drum">u</button>
+    <button src="sound/bombo.mp3"  onclick="sound6()" id="bombo" class="m drum">m</button>
+    <button src="sound/chancha.mp3" onclick="sound7()" id="chancha" class="ss drum">s</button>
     </div>
         
     <header class="encabezado">
         <div class="conteiner-menu">
             <nav class="nave">
                 <ul class="navegador">
-                    <li class="nav-home"><a href="index.html">Home</li>
-                    <li class="nav-artistas"><a href="artistas.html">Artistas</li>
-                    <li class="nav-blog"><a href="acceso.html">Subcripciones</li>
-                    <li class="nav-partituras"><a href="partituras.html">Partituras</li>
-                    <li class="nav-noticias"><a href="estadisticas.html">Estadisticas</li>
-                    <li class="nav-ritmos"><a href="ritmos.html">Ritmos</a></li>
+                        <li class="nav-home"><span class="icon-home"></span><a href="index.html">Home</li>
+                        <li class="nav-artistas"><span class="icon-users"></span><a href="artistas.html">Artistas</li>
+                        <li class="nav-acceso"><span class="icon-key2"></span><a href="acceso.html">Suscripciones</li>
+                        <li class="nav-partituras"><span class="icon-music"></span><a href="partituras.html">Partituras</li>
+                        <li class="nav-contacto"><span class="icon-bubbles2"></span><a href="contacto.html">Contacto</li>
+                        <li class="nav-ritmos"><span class="icon-headphones"></span><a href="ritmos.html">Ritmos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 <main>
-    <section class="listado">
+    <div class="box-listado">
+    <h2 class="h2-listadopartitura">Listado de Partituras</h2>
         <ul class="partituras">
-            <li class="ac-dc1"><a href="ac-dc-you-shook-me-all-night-long.html">AC-DC You Shook Me All Night Long</li><br>
-            <li class="blink1"><a href="all-the-small-things.html">Blink 182 - All The Small Things</li><br>
-            <li class="col1"><a href="the-scientist.html">Coldplay - The Scientist</li><br>
-            <li class="creed1"><a href="have-you-ever-seen-the-rai.html">Creedence Clearwater Revival - Have You Ever Seen The Rain</li><br>
-            <li class="foo1"><a href="the-pretender.html">Foo Fighters - The Pretender</li><br>
-            <li class="gree1"><a href="basket-case.html">Green Day - Basket Case</li><br>
-            <li class="kiss1"><a href="i-still-love-you.html">Kiss - I Still Love You</a></li><br>
+            <li class="ac-dc1"><span class="icon-music"></span><a href="ac-dc-you-shook-me-all-night-long.html"><span>AC/DC - You Shook Me All Night Long</span></li><br>
+            <li class="blink1"><span class="icon-music"></span><a href="all-the-small-things.html"><span>Blink 182 - All The Small Things</span></li><br>
+            <li class="col1"><span class="icon-music"></span><a href="the-scientist.html"><span>Coldplay - The Scientist</span></li><br>
+            <li class="creed1"><span class="icon-music"></span><a href="have-you-ever-seen-the-rai.html"><span>Creedence Clearwater Revival - Have You Ever Seen The Rain</span></li><br>
+            <li class="foo1"><span class="icon-music"></span><a href="the-pretender.html"><span>Foo Fighters - The Pretender</span></li><br>
+            <li class="gree1"><span class="icon-music"></span><a href="basket-case.html"><span>Green Day - Basket Case</span></li><br>
+            <li class="kiss1"><span class="icon-music"></span><a href="i-still-love-you.html"><span>Kiss - I Still Love You</a></span></li><br>
         </ul>
-
-   </section>
+    </div>
 </main>
 <br>
 <footer>
