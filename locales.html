@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Nicolas Drums</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootsrap-css/bootstrap.css">
+    <link rel="stylesheet" href="iconos.css">
+    <link rel="icon" href="log.ico">
+    <script src="index.js" lenguage="javascript" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script>
+      var edad = prompt("¿Cual es tu edad ? Escribalo aqui");
+
+        if (edad >=18){
+          alert("Eres mayor de edad, puede Suscribirse si lo desea.");
+      }
+            if(edad <=17){
+            alert("Eres menor de edad, esta pagina es APTA PARA TODO EL PUBLICO.");
+
+      }
+      if(edad >=50){
+        alert("La edad no es impotante, si el espiritu es Joven.");
+      }
+
+        document.write("NOMBRE: " + nombre2 + "/" + " EDAD: " + edad + "/" + " " );
+
+        document.write("MENSAJE: " + "/"+ frase_completa + frase );
+    </script>
+  </head>
+<body>
+<div>
+    <h1 class="title">Bienvenidos</h1>
+    <ul class="animacion">
+        <li>B</li>
+        <li>A</li>
+        <li>T</li>
+        <li>E</li>
+        <li>R</li>
+        <li>O</li>
+        <li>S</li>
+        <li></li>
+        <li>N</li>
+        <li>I</li>
+        <li>C</li>
+        <li>O</li>
+        <li>L</li>
+        <li>E</li>
+        <li>Ñ</li>
+        <li>O</li>
+        <li>S</li>
+    </ul>
+</div>
+    <div class="set">
+        <button src="sound/hithat.mp3" onclick="sound1()" id="hithat" class ="s drum">S</button>
+        <button src="sound/tacho.mp3"  onclick="sound2()" id="tacho" class="n drum">N</button>
+        <button src="sound/plato.mp3" onclick="sound3()" id="plato" class="d drum">d</button>
+        <button src="sound/tom2.mp3" onclick="sound4()" id="tom2" class="r drum">r</button>
+        <button src="sound/tom1.mp3" onclick="sound5()" id="tom1" class="u drum">u</button>
+        <button src="sound/bombo.mp3"  onclick="sound6()" id="bombo" class="m drum">m</button>
+        <button src="sound/chancha.mp3" onclick="sound7()" id="chancha" class="ss drum">s</button>
+    </div>
+            <header class="encabezado">
+                <div class="conteiner-menu">
+                    <nav class="nave">
+                        <ul class="navegador">
+                            <li class="nav-home"><span class="icon-home"></span><a href="index.html">Home</li>
+                            <li class="nav-artistas"><span class="icon-users"></span><a href="artistas.html">Artistas</li>
+                            <li class="nav-acceso"><span class="icon-key2"></span><a href="acceso.html">Suscripciones</li>
+                            <li class="nav-partituras"><span class="icon-music"></span><a href="partituras.html">Partituras</li>
+                            <li class="nav-contacto"><span class="icon-bubbles2"></span><a href="contacto.html">Contacto</li>
+                            <li class="nav-ritmos"><span class="icon-headphones"></span><a href="ritmos.html">Ritmos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+<main>
+  <br>
+    <br>
+      <br>
+        <br>
+          <br>
+            <br>
+    <article class="boostrap">
+      <h2 class="h2-boostrap">2° Encuentro de Bateristas en San Nicolas de los Arroyos</h2>
+      <img class="img-contacto" src="imagenes/icono-palos.jpg" alt="logo">
+     <h3>Futuros talentos demostrando la pasion de los parches</h3>
+     
+      <br>
+        <br>
+          <br>
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/2encuentro12.jpg" class="boostrap" alt="encuentro de bateristas Nicoleños">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>PEQUEÑOS TALENTOS FLORECIENDO</h5>
+            <p>2° encuentro de bateritas de San Nicolas de los Arroyos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro2.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>PEQUEÑOS TALENTOS FLORECIENDO (armado set)</h5>
+            <p>2° encuentro de bateritas de San Nicolas de los Arroyos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro15.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>PEQUEÑOS TALENTOS FLORECIENDO</h5>
+            <p>2° encuentro de bateritas de San Nicolas de los Arroyos</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      <br>
+        <br>
+          <br>
+            <br>
+            <h1>Armando Set y Prueva de sonido</h1><br><br>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/2encuentro4.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro5.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro6.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro7.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro8.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro9.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro10.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro11.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro1.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro13.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro14.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro3.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2encuentro16.jpg" class="d-block w-100" alt="encuentro de bateristas Nicoleños">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+     </article>
+        <br>
+          <br>
+            <br>
+
+     <article>
+      <div class="containervideo">
+          <h1 class="titulo-videos">Videos</h1><br><br><br>
+            <div>
+              <video src="video/videoencuentro2.mp4" controls></video>
+            </div>
+        <br>
+          <br>
+            <br>
+              <br>
+            <div>
+              <video class="video2" src="video/videoencuentro3.mp4" controls></video>
+            </div>
+            <br>
+              <br>
+                <br>
+                  <br>
+            <div>
+              <video src="video/videoencuentro1.mp4" controls></video>
+            </div>
+            <br>
+              <br>
+                <br>
+                  <br>
+            <div class="like">
+              <h2>Si te gusto el contenido dale Me Gusta</h2>
+              <button type="button" class="btn btn-danger">LIKE</button>
+              <br>
+            </div>
+        <br>
+          <br>
+            <br>
+            <br>
+      </div>
+<aside>
+  <DIV class="contender-aside">
+    <aside class="navegador-lateral">
+       <input type="checkbox" class="checkbox" id="check">
+        <label class="aside" for="check">||| Extras</label>
+            <div class="left-panel">
+                <ul>
+                    <a href="index.html"><li>Home</li>
+                    <a href="https://www.facebook.com/matias.martinlmds/" target="_blank"><li>Facebook<li>
+                    <a href="https://web.whatsapp.com/" target="_blank"><li>Whatsapp</li>
+                    <a href="https://www.instagram.com/matiaslmds/" target="_blank"><li>Instagram</li>
+                </ul>
+            </div>
+</aside>
+</article>
+
+</main>
+       
+                
+<footer>
+<div  class="contenedor-footer">
+    <div class="box__footer">
+        <h2>Redes Sociales</h2><br>
+            <span class="icon-facebook2"></span><a href="https://www.facebook.com/matias.martinlmds/" target="_blank">  Facebook</a><br><br><br>
+            <span class="icon-whatsapp"></span><a href="https://web.whatsapp.com/" target="_blank">  Whatsapp  +54 9 3364680991</a><br><br><br>
+            <span class="icon-instagram"></span><a href="https://www.instagram.com/matiaslmds/" target="_blank">  Instagram</a><br><br><br>
+    </div>
+    <div class="terminos">
+            <h1><STrong>Terminos y Condiciones</STrong></h1>
+            <p>
+                Es una página que está hecha para bateristas,
+                de San Nicolas de los arroyos, provincia de Buenos Aires Argentina,<br> y la zona.
+                Donde podras compartir tus cometarios, y aportar material de lecturas, imagenes y
+                noticias. La idea de<br> la página es hacer todo lo más directo posible, paralelamente
+                nos mantenemos en contacto con toda la comunidad<br> bateristica a través de dicha página,
+                donde respondemos sus inquietudes, compartimos información de este instrumento.
+            </p>
+                    
+    </div>
+                    <h2 class="derechos-reservados">TODO LOS DERECHOS RESERVADOS</h2>
+</div>
+
+</footer>
+ </body>
+</html>

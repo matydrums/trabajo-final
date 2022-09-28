@@ -10,6 +10,7 @@ body{
     height: 100vh;
     text-align: center;
 }
+                                            /*titulos*/
 .title{
     font-size: 5rem;
     color: #dbe;
@@ -18,6 +19,7 @@ body{
 .title-part{
     text-shadow: 3px 0 #daf831;
 }
+                                            /*ritmos*/
 .h1-ritmos{
 font-size: 5rem;
 font-family: 'Sacramento', Helvetica, sans-serif;
@@ -30,9 +32,16 @@ text-decoration: overline underline double rgb(9, 127, 48);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #def6e9;
 }
+                                                    /*h2*/
 .h2-form{
     color: rgb(252, 251, 249);
     font-size: 2rem;
+}
+.derechos-reservados{
+color: rgb(174, 7, 7);
+font-size: 2rem;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+opacity: 1;
 }
 .paraf-contacto{
     font-size: 2rem;
@@ -63,9 +72,7 @@ text-decoration: overline underline double rgb(9, 127, 48);
     height: auto;
     margin: auto;
     border-radius: 21px 60px 100px 11px;
-
 }
-
 .animacion{
     list-style: none;
     display: flex;
@@ -95,6 +102,7 @@ text-decoration: overline underline double rgb(9, 127, 48);
 .animacion:hover li:nth-child(even) {
     transform: skewY(-15deg);
 }
+                                    /*drums set*/
 .drum{
     outline: none;
     border: 10px solid #404869;
@@ -111,6 +119,7 @@ text-decoration: overline underline double rgb(9, 127, 48);
     margin: 10px;
     background-color: white;
     }
+                                    /*imagenes drum Set*/
 .s{
     background-image: url("imagenes/hithat.png");
 }
@@ -132,16 +141,15 @@ text-decoration: overline underline double rgb(9, 127, 48);
 .ss{
     background-image: url("imagenes/chancha.png");
 }
+                                       /*navegador*/
 .encabezado{ 
     display: flex;
     justify-content: center;
    align-items: stretch;
     margin: 0;
     gap:50px;
-
-
 }
- .navegador li{
+.navegador li{
     font-size: 30px;
     font-style: italic;
     font: arial;
@@ -149,8 +157,7 @@ text-decoration: overline underline double rgb(9, 127, 48);
 .navegador{
     display: flex;
     list-style: none;
-    gap: 15px;
-
+    gap: 40px;
 }
 .navegador li a{
     text-decoration: none;
@@ -209,11 +216,13 @@ text-decoration: overline underline double rgb(9, 127, 48);
     box-sizing: border-box;
     background : rgba(77, 44, 44, 0.529);
     border-radius: 50px 10px 50px 80px;
+    box-shadow: 10px 10px 30px 10px#e2f367;
 }
 .box-listado{
     width: 90%;
     height: 70%;
     margin: 40px;
+   
 }
 .box-listado h2{
     color: #fff;
@@ -226,7 +235,7 @@ text-decoration: overline underline double rgb(9, 127, 48);
 }
 .box-listado ul{
     position: relative;
-    background-color: rgba(44, 72, 127, 0.559);
+    background-color: rgba(32, 38, 49, 0.559);
     border-radius: 20px;
 }
 
@@ -243,6 +252,7 @@ text-decoration: overline underline double rgb(9, 127, 48);
     background: #79ff25;
     box-shadow: 0 5px rgba(0,0,0.2);
     color: rgb(16, 14, 14);
+    
 }
 .box-listado ul li span{
     text-align: center;
@@ -260,11 +270,13 @@ text-decoration: overline underline double rgb(9, 127, 48);
     background: rgb(255, 255, 255);
     color: #f47311;
 }
+                                    /*subcrtios formulario*/
 .datos-personales{
     background-color: #2de85267; 
     color: #c0f405;
     font-size: 2rem;
     border-radius: 20px;
+    text-shadow: 10px 10px 5px #2ccc0c;
 }
 .datodeform1{
 font-size: 3rem;
@@ -275,6 +287,7 @@ color: #0b0b0b;
     color: #c0f405;
     font-size: 2rem;
     border-radius: 20px;
+    text-shadow: 10px 10px 5px #130e9f;
 } 
 .datodeform2{
     font-size: 3rem;
@@ -285,6 +298,7 @@ color: #0b0b0b;
     color: #c0f405;
     font-size: 2rem;
     border-radius: 20px;
+    text-shadow: 10px 10px 5px #ec019afd;
 }
 .datosdeform3{
     font-size: 3rem;
@@ -295,6 +309,7 @@ color: #0b0b0b;
     color: #c0f405;
     font-size: 2rem;
     border-radius: 20px;
+    text-shadow: 10px 10px 5px #b6b8b6;
 }
 .datosdeform4{
     font-size: 3rem;
@@ -306,7 +321,7 @@ input{
     border-radius: 3px;
     color: #150c93;
     width: 400px;
-    height: 20px;
+    height: 20px; 
 }
 select{
     background-color: #cfd6ffce;
@@ -321,7 +336,8 @@ select{
     font-size: 2rem;
     color: #eee2e2;
     font-style: italic;
-    }
+}
+                                    /*Botones de formulario*/
 .btn-s{
     background-color: #478da700; 
     color: #c0f405;
@@ -337,6 +353,8 @@ select{
     font-size: 2rem;
     background: red;
     color: white;
+    text-shadow: 5px 5px 10px #ffffff;
+    box-shadow: 10px 10px 14px 5px #fc553b;
 }
 .btn-cancel{
     width: 200px;
@@ -346,6 +364,8 @@ select{
     font-size: 2rem;
     background: rgb(71, 230, 22);
     color: white;
+    text-shadow: 5px 5px 10px #ffffff;
+    box-shadow: 10px 10px 14px 5px #bdefa2;
 }
 .btn-ritmos{
     padding: 16px;
@@ -354,6 +374,7 @@ select{
     background: #0ae140;
     color: #150c93;
 }
+                                    /*imagenes partituras*/
 .The-Scientist-1{
     width: 700px;
 }
@@ -386,7 +407,6 @@ width: 700px;
     color: rgba(239, 142, 217, 0.766);
     text-shadow: 3px 0 #f8e0bfc7;
     font: sans-serif;
-
 }
 .orden-list{
     list-style: none;
@@ -396,7 +416,6 @@ width: 700px;
     width: 100%;
 
 }
-
 .set{
     margin: 10% auto;
 }
@@ -409,12 +428,13 @@ width: 700px;
 }
 .palosvic{
     width: 98%;
-   
 }
+                                        /*encabezado*/
 header{
     background-color: white;
     clear: both; 
 }
+                                            /* home*/
 .noti1{
 font-size: 45px;
 color: #0b0b0b;
@@ -455,7 +475,6 @@ text-shadow: 3px 0 #dbedf3;
     font-size: 45px;
     color: #0b0b0b;
     text-shadow: 3px 0 #dbedf3;
-
 }
 .paraf3{
     font-size: 20px;
@@ -469,28 +488,7 @@ text-shadow: 3px 0 #dbedf3;
     margin-right: 15px;
     border-radius: 3px;
 }
-.piedepagina{
-    background-color: #292929;
-    height: 50%;
-    width: 100%;
-    display: inline-block;
-    color: #0ae140;
-    display: grid;
-grid-template-columns: 1fr 2fr;
-text-align: left;
-margin: 0;
-padding: 15px;
-}
-
-.caja-pie a {
-text-decoration: none;
-color: rgb(249, 126, 2);
-font-size: 1rem;
-justify-items: left;
-margin: 0;
-font-size: 2rem;
-
-}
+                                            /*contacto*/
 .contacto{
     background-color: #05050567;
     padding: 20px;
@@ -498,15 +496,13 @@ font-size: 2rem;
 }
 .contacto .conteiner-contacto, .conteiner-contacto2 {
     text-align: left;
-    
 }
-
+                                            /*tabla*/
 table th{
     color: #1a173b;
 }
 table{
     color: #f20000;
-    
 }
 table img{
     width: 100px;
@@ -518,12 +514,156 @@ table img{
     font-family: 'Sacramento', Helvetica, sans-serif;
     color: #ffffff;
     text-shadow: 2px 2px #a2ae00;
-  }
-  table ul{
+}
+table ul{
    text-align: left;
+}
+                                        /*aside desplegable*/
+.aside{
+    width: 2.2rem;
+    height: 2.7rem;
+    background-color: red;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    font: 2rem;
+    color: white;
+    text-align: center;
+    transition: left 0.7s;
+    z-index: 200;
    
 
   }
+.checkbox:checked ~ .aside{
+    left: 40%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    z-index: 100;
+    position: fixed;
+}
+.left-panel{
+    width: 40%;
+    height: 100%;
+   background:  -webkit-linear-gradient(#c75454, #e36d2e, #f2dd91);
+   position: fixed;
+   top: 0;
+   left: -40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: left 0.4s;
+   border-radius: 30px 20px 70px 10px;
+   z-index: 200;
+}
+.checkbox:checked ~ .left-panel{
+  left: 0;
+}
+.checkbox{
+    display: none;
+   
+}
+.left-panel ul a{
+  color: #572525;
+  text-decoration: none;
+  font-family: 'Sacramento', Courier, monospace;
+  font-size: 5rem;
+}
+.left-panel li{
+list-style: none;
+text-align: center;
+padding: 0 0.5rem;
+margin: 1rem 0;
+}
+.left-panel li:hover{
+    color: whitesmoke;
+    border: solid whitesmoke;
+    border-width: 0 0.1rem;
+}
+                                                /*Bostrap*/
+.boostrap{
+    width: 600px;
+}
+.h2-boostrap{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #21281e;
+    text-shadow: 3px 10px 10px #bfb3bd;
+    text-align: center;
+}
+article, h5, p{
+    color: #0b0b0b;
+}
+.like{
+    color: white;
+}
+                                                /*videos*/
+.containervideo{
+    padding: 100px;
+   align-content: center;
+    width: 660px;
+    height: auto;
+   margin-top: 30%;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    gap: 6rem;
+}
+video{
+    width: auto;
+    height: auto;
+    position: static;
+}
+.titulo-videos{
+    font-size: 5rem;
+    color: #4beb0b;
+    text-shadow: 3px 10px 10px #b94fa5, 3px 10px 10px #b94fa5, 3px 10px 10px #b94fa5;
+}
+                                                /*Footer*/
+.contenedor-footer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #292929;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    opacity: 0.9;
+}
+.box__footer{
+    max-width: 50%;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    text-align: left;
+    display: inline-block;
+    color: #0ae140;
+}
+.terminos{
+    max-width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    align-content: right;
+    display: inline-block;
+    text-shadow: 10px 20px 10x 10px#a4b7c0;
+    margin: 50px;
+    padding: 10px;
+    color: #0ae140;
+}
+.terminos h1 {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-shadow: 10px 20px 10x 10px#a4b7c0;
+    color: #0ae140;
+}
+.contenedor-footer a {
+    text-decoration: none;
+    color: rgb(249, 126, 2);
+    font-size: 1rem;
+}
+.contenedor-footer span{
+    color: rgb(249, 126, 2);
+}
+
 /*.contenedor-ritmos{
     left: 5%;
     width: 400px;
